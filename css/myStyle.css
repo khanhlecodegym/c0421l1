@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e5e7ee;
+  padding: 40px;
+}
+
+.component {
+  background-color: burlywood;
+}
+
+.component .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.component .header h3 {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+
+.component .header label {
+    background-color: #d4d9e0;
+    width: 212px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
