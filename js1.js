@@ -17,7 +17,7 @@ let sum2num = document.getElementById("result");
 
 
 function sum() {
-    console.log(parseInt(num1.value)  + parseInt(num2.value));
-    sum2num.textContent = parseInt(num1.value)  + parseInt(num2.value);
+    console.log(parseInt(num1.value)  - parseInt(num2.value));
+    sum2num.textContent = parseInt(num1.value) - parseInt(num2.value);
 }
 
