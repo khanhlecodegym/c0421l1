@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="html.css">
 </head>
 
 <body>
@@ -40,12 +41,13 @@
     <a href="duongvanhuy.html" style="text-decoration:none">Van Huy</a>
     <p>--------------------------------------------</p>
 
-    <form action="#">
+    <form action="#" method="GET" class="form">
         <label for="fname">First name:</label><br>
         <input type="text" id="fname" name="fname" value="John"><br>
         <label for="lname">Last name:</label><br>
         <input type="text" id="lname" name="lname" value="Doe"><br><br>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Add" name="action" class="add">
+        <input type="submit" value="Update" name="action" class="add">
     </form>
 
 </body>
