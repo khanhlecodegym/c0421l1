@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập</title>
+    <style>
+        .menu{
+            position: relative;
+        }
+        .content{
+            display: inline-block;
+    padding-bottom: 10px;
+            width: 150px;
+            font-size: 16px;
+        }
+        form{
+            border: 1px #d7d6d5 solid;
+            width: 500px;
+            margin: auto;
+            padding-left: 10px;
+            background: cornflowerblue;
+        }
+        h2{
+            text-align: center;
+            color: blue;
+        }
+        .footer{
+            padding: 10px 200px;
+        }
+     
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <form action="">
+            <h2>Đăng nhập vào hệ thống</h2>
+            <div class="f-menu">
+                <div class="content">
+                    <label for="name"><b>TÊN ĐĂNG NHẬP:</b></label>
+                    
+                </div>
+                <div class="content">
+                    <input type="text" id="name">
+                </div> 
+                
+            </div>
+            <div class="fs-menu">
+                <div class="content">
+                    <label for="pass"><b>MẬT KHẨU:</b></label>
+                    
+                </div>
+                <div class="content">
+                    <input type="password" id="pass">
+                </div>
+            </div>    
+            <div class="footer">
+                <button type="submit" onclick="eventOne()">Đăng nhập</button>
+            </div>
+    </form>
+    </div>
+    
+</body>
+</html>
+<script src="Script/index.js"></script>
