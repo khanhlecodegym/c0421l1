@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <label for="">UserName</label>
+    <input type="text" name="" id="username">
+    <label for="">Password</label>
+    <input type="text" name="" id="pass">
+    <button onclick="dnhap()">Dang nhap</button>
+    <p>Ket qua: <span id="tbao"></span></p>
+</body>
+
+</html>
+<script>
+
+
+function dnhap(){
+let usname = document.getElementById("username").value
+let pas =document.getElementById("pass").value
+let tbao;
+    if (usname =="codegym"){
+        if (pas =="codegym"){
+            tbao="Thanh cong"
+        }else {
+            tbao="Sai pass"
+        }
+    }else {tbao="Sai username"}
+ document.getElementById("tbao").innerHTML = tbao
+}
+
+</script>

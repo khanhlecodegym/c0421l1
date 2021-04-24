@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Đăng Nhập</title>
+</head>
+<body>
+<form>
+  <label>Username </label><input type="text" id="1"><br><br>
+  <label>Password </label><input type="password" id="2">
+  <button type="button" onclick="dangnhap()">Đăng nhập</button>
+  <p>Kết quả: <span id="3"></span></p>
+</form>
+<script>
+  let tk="codeGym";
+  let mk="12345";
+  let a=document.getElementById("1");
+  let b=document.getElementById("2");
+  let tb=document.getElementById("3");
+
+  function dangnhap(){
+    if(a.value==tk && b.value==mk){
+      tb.innerHTML="Đăng nhập thành công";
+    }
+    else{
+      tb.innerHTML="Đăng nhập không thành công";
+    }
+  }
+
+</script>
+</body>
+</html>
