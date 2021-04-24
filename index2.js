@@ -6,7 +6,6 @@ function DangNhap(){
     if (usname.value==us && password.value == pas) {
 
         document.write("Đăng Nhập Thành Công");
-        
     }
     
     if(usname.value==us&&password.value!=pas ){
