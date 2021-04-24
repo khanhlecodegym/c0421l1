@@ -12,7 +12,7 @@
 
 <style>
   body {
-    
+
     background-image: url("oto.jpg");
 
     background-size: cover;
@@ -22,7 +22,7 @@
 <body>
   <span id="vnclock"></span>
   <marquee behavior="accelerometer" direction="up" style="color: blue;">
-    <h1 cursor: "pointer"; id="intro" style="text-align: center;"></h1>
+    <h1 id="intro" style="text-align: center; "></h1>
   </marquee>
   <p style="color:red; font-weight:bold;text-align:center">TƯ VẤN – DẠY LÁI XE Ô TÔ UY TÍN</p>
   <p style="color:blue; font-weight:bold;text-align:center">THỪA THIÊN HUẾ</p>
@@ -32,30 +32,33 @@
     <li><a href="#contact">Contact</a></li>
     <li><a href="#about">About</a></li>
   </ul>
-  
-  <p id="past" onclick="do_something()" style="color:green; font-weight:bold;text-align:left; font-size:12pt" >THẦY HIẾU(0965997622) - HOTLINE(0965997622)</p>
 
-  <p style="color:green; font-weight:bold;text-align:right;margin-right: 195px; font-size:12pt" >Địa Chỉ Liên Hệ </p>
-  <br ><iframe style="float: right;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3824.7997842854165!2d107.4656652148646!3d16.536202488593926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3141a802ca76b05d%3A0x3dea693b3b19530f!2zVsO1IELDoSBI4bqhcCwgVOG7qSBI4bqhLCBUeC4gSMawxqFuZyBUcsOgLCBUaOG7q2EgVGhpw6puIEh14bq_!5e0!3m2!1sfr!2s!4v1618317758084!5m2!1sfr!2s" width="300" height="170" style="border:0;"  allowfullscreen="" loading="lazy"> </iframe>  
+  <p id="past" onclick="do_something()" style="color:green; font-weight:bold;text-align:left; font-size:12pt">THẦY
+    HIẾU(0965997622) - HOTLINE(0965997622)</p>
 
-  
+  <p style="color:green; font-weight:bold;text-align:right;margin-right: 195px; font-size:12pt">Địa Chỉ Liên Hệ </p>
+  <br><iframe style="float: right;"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3824.7997842854165!2d107.4656652148646!3d16.536202488593926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3141a802ca76b05d%3A0x3dea693b3b19530f!2zVsO1IELDoSBI4bqhcCwgVOG7qSBI4bqhLCBUeC4gSMawxqFuZyBUcsOgLCBUaOG7q2EgVGhpw6puIEh14bq_!5e0!3m2!1sfr!2s!4v1618317758084!5m2!1sfr!2s"
+    width="300" height="170" style="border:0;" allowfullscreen="" loading="lazy"> </iframe>
 
-  <div id="form" style="width:300px" >
+
+
+  <div id="form" style="width:300px">
     <fieldset style="width : 270px">
-    <form class="form" action="index.html" method="GET" style="color: blue; font-weight: bold; ">Đăng Ký Tư Vấn<br>
-      Họ và tên<br>
-      <input type="text" name="firstname" placeholder="Your name.." style="width:230px;"><br>
-      SDT<br>
-      <input type="number" name="phone" placeholder="Number Phone.." style="width: 230px;"><br>
-      Email<br>
-      <input type="email" name="email" placeholder="Your email.." style="width: 230px"><br>
-      Giới tính
+      <form class="form" action="index.html" method="GET" style="color: blue; font-weight: bold; ">Đăng Ký Tư Vấn<br>
+        Họ và tên<br>
+        <input type="text" name="firstname" placeholder="Your name.." style="width:230px;"><br>
+        SDT<br>
+        <input type="number" name="phone" placeholder="Number Phone.." style="width: 230px;"><br>
+        Email<br>
+        <input type="email" name="email" placeholder="Your email.." style="width: 230px"><br>
+        Giới tính
 
-      <select name="city" id="">
-        <option value="1">Nam</option>
-        <option value="2">Nữ</option>
-      </select><br>
-      <input type=submit value="Đăng Ký" { style="
+        <select name="city" id="">
+          <option value="1">Nam</option>
+          <option value="2">Nữ</option>
+        </select><br>
+        <input type=submit value="Đăng Ký" { style="
     width: 150px;
     background-color: green;
     color: white;
@@ -64,9 +67,9 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;" }>
-      <input type="reset" style=" border-radius: 4px; background-color: green;padding: 14px 20px;
+        <input type="reset" style=" border-radius: 4px; background-color: green;padding: 14px 20px;
    margin: 8px 0;">
-   </fieldset>
+    </fieldset>
     </form>
   </div>
   <div id="content" class="container">
@@ -81,11 +84,36 @@
     <iframe width="300" height="170" src="https://www.youtube.com/embed/JfDC6t9NCjM" title="YouTube video player"
       frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen></iframe>
-     <br>
-     
+    <br>
   </div>
+<form action="#">
+    <input type="number" name="input" id="num1">
+    <input type="number" name="" id="num2">
+    <button onclick="sum()">+</button>
+    <label for="">Kết quả: <span id="result">0</span></label>
+  <button onclick="resetForm()">reset</button>
+</form>
+
+
+  <input type="number" name="" id="num3">
+  <input type="number" name="" id="num4">
+  <button onclick="tru()">-</button>
+  <label for="">Kết quả: <span id="bmw">0</span></label>
+  <br>
+  <input type="number" name="" id="num5">
+  <input type="number" name="" id="num6">
+  <button onclick="nhan()">*</button>
+  <label for="">Kết quả: <span id="vinfast">0</span></label>
+  <br>
+
+  <input type="number" name="" id="num7">
+  <input type="number" name="" id="num8">
+  <button onclick="chia()">/</button>
+  <label for="">Kết quả: <span id="cadilac">0</span></label>
+
+
 
 </body>
+<script src="index.js"></script>
 
 </html>
-<script src="index.js"></script>
