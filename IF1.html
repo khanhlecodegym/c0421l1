@@ -22,8 +22,14 @@
     if(a.value==tk && b.value==mk){
       tb.innerHTML="Đăng nhập thành công";
     }
-    else{
-      tb.innerHTML="Đăng nhập không thành công";
+    else if(a.value!=tk && b.value==mk){
+      tb.innerHTML="username sai ";
+    }
+    else if(a.value==tk && b.value!=mk){
+      tb.innerHTML="password sai";
+    }
+    else {
+      tb.innerHTML="cả hai đều sai";
     }
   }
 
