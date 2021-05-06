@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //khai bao mảng
+        //let arrName = ['minh hieu','anh huy'];//khai bao
+        //arrName.push("hoang duy")// them hoang duy
+        //arrName[1] = "xuan truong";//thay anh huy = xuan truong
+        //arrName.shift();//loai minh hieu ra khoi mang
+        //arrName.unshift('chi vy','tu toan');//them chi vy va tu toan vao dau mang
+        //console.log(arrName);//in mang
+        //console.log(arrName.length);//in do dai mang
+        //nhap vao ten 1 loai dong vat, khi nhap Q, in ra tât ca
+        // let dong_vat = []
+        // let dv;
+        // while (true) {
+        //     dv= prompt("Nhap ten dong vat")           
+        //     if (dv=="q"){
+        //        break;
+        //     }
+        //     dong_vat.push(dv);
+        // }
+        // console.log(dong_vat);
+        //nhap 1 con so, add vao mang so nguoi dung nhap, neu nguoi dung nhap 0, in mang tong mang
+        // let nhapso;
+        // let sum;
+        // let so=[];
+        // while (true) {
+        //     nhapso=+prompt("nhap so");
+        //     so.push(so);
+        //     if (nhapso ==0) {
+        //         for (let i = 0; i < so.length; i++) {
+        //             sum = sum + so[i];
+        //             break;
+        //         }
+        //     }
+            
+        // }
+        // document.write(sum)
+        //random 1 so 0-20,chinh la so phan tu mang, moi gia tri cua mang random 0-100. Tinh tong mang, tong chan/le, dem chan/le, tim so 68/mang neu co thi in ra so 68 neu khong co in khong co.
+        let arrandom = Math.round(Math.random()*20);//random 1 so 0-20: gia tri lenght mang
+        let arr=[], sum=0, sum_chan=0, sum_le=0, chan=0, le=0;
+        let dem68=0;
+        // gia tri mang tu 0 -100
+        for (let i=0; i<arrandom; i++){ 
+            let numrand =Math.round(Math.random()*100);
+            arr.push(numrand);
+        }
+         //tong mang
+        for (i=0; i<arr.length; i++){
+            sum=sum+arr[i];
+        }
+        // tong chan, tong le// dem chan/le
+        for (i=0; i<arr.length; i++){
+            if (arr[i]%2==0){
+                sum_chan=sum_chan+arr[i];
+                chan=chan+1;
+            } else {
+                sum_le=sum_le+arr[i];
+                le=le+1;
+            }
+        }
+        // dem co bao nhieu so 68, in ra
+        for (i=0; i<arr.length; i++){
+            if (arr[i]==68){
+                dem68=dem68+1
+            }
+        }
+        console.log("mang",arr);
+        console.log("tong mang",sum);
+        console.log(sum_le);
+        console.log(sum_chan);
+        console.log("so le",le);
+        console.log("so chan", chan);
+        console.log("Co",dem68,"so 68")
+
+    </script>
+</body>
+
+</html>

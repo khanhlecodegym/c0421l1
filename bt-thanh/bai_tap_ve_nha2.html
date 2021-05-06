@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let tong_cot1=0, tong_cot2=0, tong_cot3=0, tong_cot4=0, tong_cot5=0;
+        let tong_hang1=0, tong_hang2=0, tong_hang3=0, tong_hang4=0;
+        let hang_hientai=0, tong_toanbo=0;
+        let tong_chan=0;
+        for (let i = 0; i < 5; i++) {
+            for (let j = 0; j < 5; j++) {
+                let num = Math.round(Math.random() * 100);
+                document.write(" ",num);
+                //Tong toan bo
+                tong_toanbo= tong_toanbo+num
+                //tong so chan
+                if (num%2==0){
+                    tong_chan=tong_chan+num
+                }
+                //tong cot
+                switch (j) {
+                    case 0: tong_cot1 =tong_cot1 +num;
+                    break;
+                    case 1: tong_cot2 =tong_cot2 +num;
+                    break;
+                    case 2: tong_cot3 =tong_cot3 +num;
+                    break;
+                    case 3: tong_cot4 =tong_cot4+num;
+                    break;
+                    case 4: tong_cot5=tong_cot5+num;
+                    break;
+                }
+                //Hang hien tai
+                hang_hientai=hang_hientai+num;
+
+            }
+            // Tong moi hang
+            switch (i){
+                case 0: tong_hang1=hang_hientai; hang_hientai=0;
+
+                case 1: tong_hang2=hang_hientai; hang_hientai=0;
+                case 2: tong_hang3=hang_hientai; hang_hientai=0;
+                case 3: tong_hang4=hang_hientai; hang_hientai=0;
+                case 4: tong_hang5=hang_hientai; hang_hientai=0;
+            }
+            document.write('<br>');
+        }
+        document.write(" Tong toan bo ",tong_toanbo)
+        document.write('<br>');
+        document.write(" Tong cot 1: ",tong_cot1)
+        document.write('<br>');
+        document.write(" Tong cot 2: ",tong_cot2)
+        document.write('<br>');
+        document.write(" Tong cot 3: ",tong_cot3)
+        document.write('<br>');
+        document.write(" Tong cot 4: ",tong_cot4)
+        document.write('<br>');
+        document.write(" Tong cot 5: ",tong_cot5)
+        document.write('<br>');
+        document.write(" Tong hang 1: ",tong_hang1)
+        document.write('<br>');
+        document.write(" Tong hang 2: ",tong_hang2)
+        document.write('<br>');
+        document.write(" Tong hang 3: ",tong_hang3)
+        document.write('<br>');
+        document.write(" Tong hang 4: ",tong_hang4)
+        document.write('<br>');
+        document.write(" Tong hang 5: ",tong_hang5)
+        document.write('<br>');
+        document.write("Tong chan ",tong_chan)
+    </script>
+
+</body>
+
+</html>
