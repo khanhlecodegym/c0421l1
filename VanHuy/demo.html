@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đề mô</title>
+</head>
+
+<body>
+    <script>
+            let randumrr = Math.round(Math.random()*19)+1;
+            let arr = [];
+            let sum =0;
+            let sumEven=0;
+            let sumOdd =0;
+            let show;
+            let demEven =0;
+            let demOdd =0;
+            for(let i =0; i < randumrr; i++){
+                arr[i]=Math.round(Math.random()*101);
+                sum +=arr[i];
+                if(arr[i]%2==0){
+                    sumEven +=arr[i];
+                    demEven ++;
+                }
+                else{
+                    sumOdd +=arr[i];
+                    demOdd ++;
+                }
+                if(arr[i]==61){
+                    show='Có số cần tìm';
+                } 
+                else{
+                    show='Không có số cần tìm';
+                }
+            }
+            document.write('Chiều dài của mạng là: '+randumrr+'<br>');
+            document.write('Danh sách số phần tử của mạng: '+arr+'<br>');
+            document.write('Tổng giá trị các phần tử của mạng= '+sum+'<br>');
+            document.write('Tổng giá trị các phần tử chẵn của mạng= '+sumEven+'<br>');
+            document.write('Tổng giá trị các phần tử lẻ của mạng= '+sumOdd+'<br>');
+            document.write('Tổng số phần tử chẵn của mạng= '+demEven+'<br>');
+            document.write('Tổng số phần tử lẻ của mạng= '+demOdd+'<br>');
+            document.write('Có số 61 trong mạng không?'+'<br>'+show+'<br>');
+    </script>
+</body>
+
+</html>

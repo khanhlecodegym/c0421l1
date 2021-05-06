@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let number = parseInt(prompt('Nhập vào 1 số'));
+        // let sum = 0;
+        // while(number !=0){
+        //     sum += number;
+        //     break;
+        // }
+        // console.log(sum);
+
+
+        // let sum = 0;
+        //     while(!number>=2){
+        //          let number = parseInt(prompt('Nhập vào 1 số'));
+        //          sum += 2
+        //         if(number %2 != 0){
+        //             break;
+        //         }
+        //         sum +=number
+        //     }
+        //     console.log(sum); 
+
+        // let number = parseInt(prompt('Nhập vào 1 số'));
+        // let sum = 0;
+        // for(let i =2 ; i<=number; i+=2){
+        //     sum +=i;
+        // }
+        // alert(sum);
+
+        // while(true){
+        //     let number = parseInt(prompt('Nhập vào 1 số'));
+        //     if(number>=100){
+        //         alert('đúng rồi');
+        //         break;
+        //     }
+        //     alert('nhập lại');
+        //     // break;
+        // }
+        // let nhapTT =prompt('nhập');
+        // do{
+        //     if(nhapTT=='g'){
+        //         alert('Hello');
+        //         break;
+        //     }
+        //     alert('nhập lại');
+        // }while(nhapTT!='g')
+
+        // let number = parseInt(prompt('Nhập vào 1 số'));
+        // let ketqua = 1;
+        // for (let i = 2; i <= number; i++) {
+        //     ketqua = ketqua * i;
+        // }
+        // alert(ketqua);
+        let sum = 0;
+        let sumEven = 0;
+        let sumOdd = 0;
+        let sumHang = 0;
+        let cot1 = 0;
+        let cot2 =0;
+        let cot3=0;
+        let cot4=0;
+        let cot5=0;
+        let hang1, hang2, hang3, hang4, hang5;
+        for (let i = 0; i < 5; i++) {
+            for (let j = 0; j < 5; j++) {
+                let num = Math.round(Math.random() * 100);
+                sumHang += num;
+                document.writeln(num);
+                switch (j) {
+                    case 0:
+                        cot1 += num;
+                        break;
+                    case 1:
+                        cot2 += num;
+                        break;
+                    case 2:
+                        cot3 += num;
+                        break;
+                    case 3:
+                        cot4 += num;
+                        break;
+                    case 4:
+                        cot5 += num;
+                }
+                sum += num;
+                document.writeln(num);
+                if(num %2 ==0){
+                    sumEven +=num;
+                }
+                else{
+                    sumOdd += num;
+                }
+            }
+            document.write('<br>');
+            switch (i) {
+                case 0:
+                    hang1 = sumHang;
+                    sumHang = 0;
+                    break;
+                case 1:
+                    hang2 = sumHang;
+                    sumHang = 0;
+                    break;
+                case 2:
+                    hang3 = sumHang;
+                    sumHang = 0;
+                    break;
+                case 3:
+                    hang4 = sumHang;
+                    sumHang = 0;
+                    break;
+                case 4:
+                    hang5 = sumHang;
+                    sumHang = 0;
+                    break;
+            }
+        }
+        document.write('Tổng các số từ 50: '+sum+'<br>');
+        document.write('Tổng các số chẵn: '+ sumEven+'<br>');
+        document.write('Tổng các số lẽ: '+ sumOdd+'<br>');
+        document.write('hang1: ' + hang1 + '<br>');
+        document.write('hang2: ' + hang2 + '<br>');
+        document.write('hang3: ' + hang3 + '<br>');
+        document.write('hang4: ' + hang4 + '<br>');
+        document.write('hang5: ' + hang5 + '<br>');
+        document.write('cột 1: ' + cot1 + '<br>');
+        document.write('cột 2: ' + cot2 + '<br>');
+        document.write('cột 3: ' + cot3 + '<br>');
+        document.write('cột 4: ' + cot4 + '<br>');
+        document.write('cột 5: ' + cot5 + '<br>');
+    </script>
+</body>
+
+</html>
