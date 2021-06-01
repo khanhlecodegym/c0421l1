@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+  
+</head>
+
+<body>
+    <label for="">Dich sang tieng viet</label>
+    <input type="text" name="ten" id="ten">;
+    <button  onclick="dich()">Dich</button>;
+    <p>Ket qua: <span id="dongvat"></span></p>
+
+    <script>
+
+        function dich(){
+        let tienganh=["lion","tiger","cat","dog","panda"]; tiengviet=["sư tử","hổ","mèo","chó","gấu"];
+        let ten1=document.getElementById("ten").value; 
+        let dongvat;
+        for (let i=0; i<5; i++) {
+            if (tienganh[i]==ten1){
+                dongvat=tiengviet[i];
+            }
+        }
+        console.log(dongvat);
+        document.getElementById("dongvat").innerHTML = dongvat
+        }
+
+
+    </script>
+</body>
+
+</html>
