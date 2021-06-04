@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // bai 1:
+        // let hang=Math.round(Math.random()*10); 
+        // let cot=Math.round(Math.random()*10);
+        // let mang=[];
+        // for (let i=0; i<hang; i++){
+        //     mang[i]=[];
+        //     document.write('row ',i+1,' :',mang[i]);
+        //     for (let j=0; j<cot;j++){
+        //         mang[i][j]= Math.round(Math.random()*10);
+        //         document.write(mang[i][j],' ');
+        //     }
+        //     document.write('<br>');
+        // }
+        // bai 2: đảo ngược kí tự
+        // for (i=hang-1; i>=0; i--){
+        //     document.write('nguoc row ',i+1,' :');
+        //     for (j=cot-1; j>=0;j--){
+        //         document.write(mang[i][j],' ');
+        //     }
+        //     document.write('<br>');
+        //}
+        // Bai 3: Khai báo mảng ký tự và kích thước. Đếm số ký tự số trong mảng          //isNaN()
+        // let arr3=[]; arr3.length=10; countnum=0;
+        // for (let i=0; i<arr3.length; i++){
+        //     arr3[i]= prompt("nhập so");
+        //     if (!isNaN(arr3[i])){
+        //     countnum=countnum+1;
+        //     }
+        // }
+        // document.write(arr3);
+        // document.write('<br>')
+        // document.write('Tổng kí tự số ',countnum);
+        // Bài 4: nhập 1 chuỗi đếm số từ
+        //let chuoi1=prompt("Nhap chuoi");
+        //let l1= chuoi1.split(" ");
+        //document.write("số từ trong chuỗi: ",l1.length);
+        //document.write('<br>');
+        // Bài 5: nhâp 2 chuỗi. kiểm tra 2 chuôi giống nhau không
+        // let chuoi1 = prompt("nhap chuỗi 1"); chuoi2 = prompt("nhap chuoi 2");
+        // let c1 = chuoi1.split(""); c2 = chuoi2.split(""); sosanh = true;
+        // if (c1.length == c2.length) {
+        //     for (let i = 0; i < c1.length; i++) {
+        //        if (c1[i] !== c2[i]) {
+        //             sosanh = false;
+        //         }
+        //     }
+        // } else {
+        //     sosanh = false;
+        // }
+        // if (sosanh == false) {
+        //     document.write("2 chuỗi khác nhau");
+        // } else {
+        //     document.write("2 chuỗi bằng nhau");
+        // }
+        // Bài 6: nhập 1 mảng kí tự, tìm kí tự (-) và thay bằng (_)
+        let chuoi=prompt("nhap chuoi kí tự");
+        let c=chuoi.split("");
+        for (let i=0; i<c.length; i++){
+            if (c[i]=='-'){
+                c[i]='_'
+            }
+        }
+        document.write(c);
+
+    </script>
+</body>
+
+</html>
