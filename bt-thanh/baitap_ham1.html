@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- <button onclick="alertMessage()">Click</button>; -->
+    <!-- <button onclick="tang(3)">Click</button>
+    <span id="giatri"></span> -->
+    
+</body>
+
+</html>
+<script>
+    // Bài 1: 
+    //    function alertMessage(){
+    //     alert("Hello world");
+    //    }
+    // Bài 2: gọi hàm tăng giá trị
+    // function tang(x) {
+    //    x++;
+    //    document.getElementById("giatri").innerHTML= x;
+    // }
+    //Bài 3:
+    // function sum(a,b){
+    //     if (a>b){
+    //         alert("Số 1 lớn hơn số 2");
+    //     } else {
+    //         return a+b;
+    //     }
+    // }
+    // let so1=+prompt("nhap so1"); so2=+prompt("nhap so 2");
+    // document.write(sum(so1,so2));
+    //Bài 4:
+    // function addNumbers() {
+    //     firstNum = 4;
+    //     secondNum = 8;
+    //     result = firstNum + secondNum;
+    //     return result;
+    // }
+    // result = 0;
+    // alert(result);
+    // result = addNumbers();
+    // alert(result);
+    //Bài 5:
+    function tracuu(n){
+        let ar1= ["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe","Regulus"]; ar2= ["Ursa Minor","Tarurus","Cygnus","Lyra","Aquila","Ursa Major","Leo"];
+        let ten;
+        for (let i=0; i<ar1.length; i++){
+            if (n==ar1[i]){
+                ten=ar2[i];
+                return ten;
+            } else {
+                return "Không tìm thấy";
+            }
+        }
+    }
+
+    let tencasi= prompt("Nhập tên ca si");
+    document.write(tracuu(tencasi));
+</script>
