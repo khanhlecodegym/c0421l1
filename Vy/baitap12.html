@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bài tập</title>
+</head>
+<body>
+<button onclick="xinchao()">Xinchao</button><br>
+<button onclick="tangSo(1)">Câu 2</button><br>
+<span id="tang"></span>
+</body>
+</html>
+<script>
+  function xinchao(){
+    alert("Xin Chào");
+  }
+  function tangSo(n){
+    n++;
+    document.getElementById("tang").innerHTML=n;
+  }
+</script>
